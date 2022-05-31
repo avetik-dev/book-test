@@ -1,0 +1,13 @@
+{
+    "name": "avetik-dev/book-test",
+    "description": "test Project for laravel",
+    "license": "MTI",
+    "authors": [
+        {
+            "name": "John Smith",
+            "email": "avetik.martirosyan@esterox.am"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
