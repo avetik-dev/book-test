@@ -1,13 +1,51 @@
 {
     "name": "avetik-dev/book-test",
     "description": "test Project for laravel",
-    "license": "MTI",
+    "homepage": "https://developers.resova.com/",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "test",
+        "laravel-test",
+        "test-api",
+        "client-test-client"
+    ],
     "authors": [
         {
-            "name": "John Smith",
+            "name": "Avetik Martirosyan",
             "email": "avetik.martirosyan@esterox.am"
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Resova\\": "./src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Resova\\Tests\\": "./tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "vlucas/phpdotenv": "^3.6",
+        "orchestra/testbench": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Resova\\Laravel\\ClientServiceProvider"
+            ],
+            "aliases": {
+                "ResovaApi": "Resova\\Laravel\\ClientFacade"
+            }
+        }
+    }
 }
