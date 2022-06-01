@@ -16,7 +16,7 @@
             "email": "avetik.martirosyan@esterox.am"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Resova\\": "./src/"
@@ -28,15 +28,7 @@
         }
     },
     "require": {
-        "php": ">=7.1",
-        "ext-curl": "*",
-        "ext-json": "*",
-        "guzzlehttp/guzzle": "^6.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^7.0",
-        "vlucas/phpdotenv": "^3.6",
-        "orchestra/testbench": "^3.0"
+        "php": ">=7.1"
     },
     "extra": {
         "laravel": {
