@@ -2,7 +2,7 @@
     "name": "avetik-dev/book-test",
     "description": "test Project for laravel",
     "homepage": "https://developers.resova.com/",
-    "type": "library",
+    "type": "Extension",
     "license": "MIT",
     "keywords": [
         "test",
