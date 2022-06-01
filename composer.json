@@ -10,6 +10,9 @@
         "test-api",
         "client-test-client"
     ],
+    "require": {
+        "php": ">=7.1"
+    },
     "authors": [
         {
             "name": "Avetik Martirosyan",
@@ -21,14 +24,6 @@
         "psr-4": {
             "Resova\\": "./src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Resova\\Tests\\": "./tests/"
-        }
-    },
-    "require": {
-        "php": ">=7.1"
     },
     "extra": {
         "laravel": {
